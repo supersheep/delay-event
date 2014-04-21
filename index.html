@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script
+    src="./neurons/neuron/latest/neuron.js"></script>
+    <script>
+    neuron.config({
+        path: './neurons'
+    });
+    </script>
+    <style>
+    .menu{
+        width: 150px;
+        height: 150px;
+        background-color: #390;
+    }
+    </style>
+    </head>
+<body>
+
+    <div class="menu"></div>
+    <input type="text" class="input">
+
+    <script>
+    _use("jquery",function($){
+        _use("delay-event",function(delay){
+            // menu example
+            var menu = $(".menu");
+            function changeColor(e){
+                this.style.backgroundColor = "#f00";
+                console.log(this,e);
+            }
+
+            delay(changeColor,200)
+                .trigger(menu,"mouseenter")
+                .stopper(menu,'mouseleave');
+
+            menu.on("mouseleave",function(){
+                this.style.backgroundColor = "#390";
+            });
+
+            var input = $(".input");
+            function suggest(e){
+                console.log("suggest",this,e);
+            }
+            delay(suggest,200)
+                .trigger(input,"keyup");
+        });
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+{
+  "name": "delay-event",
+  "description": "The coolest cortex module",
+  "version": "0.1.0",
+  "homepage": "https://github.com/supersheep/multiEvent",
+  "author": {
+    "name": "supersheep",
+    "email": "supersheepxjy@gmail.com"
+  },
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/supersheep/multiEvent.git"
+  },
+  "bugs": {
+    "url": "https://github.com/supersheep/multiEvent/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/supersheep/multiEvent/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.6.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1"
+  },
+  "keywords": [],
+  "cortex": {
+    "devDependencies": {
+      "neuron": "~3.5.6"
+    },
+    "asyncDependencies": {},
+    "scripts": {},
+    "dependencies": {
+      "jquery": "~1.9.2",
+      "neuron": "~4.4.1"
+    }
+  }
+}
