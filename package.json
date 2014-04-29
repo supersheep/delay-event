@@ -1,7 +1,7 @@
 {
   "name": "delay-event",
   "description": "The coolest cortex module",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/supersheep/multiEvent",
   "author": {
     "name": "supersheep",
@@ -32,14 +32,13 @@
   },
   "keywords": [],
   "cortex": {
-    "devDependencies": {
-      "neuron": "~3.5.6"
-    },
     "asyncDependencies": {},
     "scripts": {},
     "dependencies": {
-      "jquery": "~1.9.2",
-      "neuron": "~4.4.1"
+      "jquery": "~1.9.2"
+    },
+    "devDependencies": {
+      "neuron": "~4.5.0"
     }
   }
 }
